@@ -1,0 +1,32 @@
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+.cudi-viajes {
+    font-size: 1.5rem; /* Ajusta este valor según lo grande que quieras el texto */
+    font-weight: bold; /* Opcional: para hacer el texto en negrita */
+    color: #fff; /* Opcional: para asegurarte de que el texto tenga buen contraste */
+}
+
+
+.cudi-viajes {
+    font-size: 1.5rem; /* Ajusta este valor según lo grande que quieras el texto */
+    font-weight: bold; /* Opcional: para hacer el texto en negrita */
+    color: #fff; /* Opcional: para asegurarte de que el texto tenga buen contraste */
+    font-family: 'Lobster', cursive; /* Aplicar la fuente Lobster */
+}
+
+.roboto-mono-regular {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Regular weight */
+    font-style: normal;
+}
+
+.roboto-mono-bold {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700; /* Bold weight */
+    font-style: normal;
+}
+

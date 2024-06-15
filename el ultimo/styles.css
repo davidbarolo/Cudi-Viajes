@@ -1,0 +1,658 @@
+/* Estilos para el fondo desenfocado */
+body::before {
+    /*agrega contenido atras del cuerpo de la pagina*/
+    content: "";
+    /* Añade un elemento vacío antes del contenido del body */
+    position: fixed;
+    /* Posiciona el elemento de forma fija */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Ocupa todo el ancho de la pantalla */
+    height: 100%;
+    /* Ocupa todo el alto de la pantalla */
+    background-image: url('imagenes/vacaciones.jpg');
+    /* Imagen de fondo */
+    background-size: cover;
+    /* Ajusta la imagen para cubrir todo el contenedor */
+    background-position: center;
+    /* Centra la imagen */
+    filter: blur(5px);
+    /* Aplica un desenfoque de 5 píxeles */
+    z-index: -1;
+    /* Coloca el elemento detrás de los demás elementos */
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    /* Fuente general del documento */
+    margin: 0;
+    /* Elimina el margen predeterminado */
+    padding: 0;
+    /* Elimina el relleno predeterminado */
+    color: #333;
+    /* Color del texto principal */
+    background: linear-gradient(90deg, rgb(196, 227, 255)0%, rgb(202, 216, 217)51%, rgb(209, 221, 227)90%);
+}
+
+
+h {
+    font-size: 40px; /* Adjust the font size */
+    font-weight: bold; /* Ensure the font is bold */
+    color: #990c0c; /* Adjust the color as needed */
+    text-align: center; /* Center the text */
+    margin: 20px 0; /* Add some margin */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    
+    margin-top: 0;
+    /* Elimina el margen superior */
+    font-family: 'Arial Black', Arial, sans-serif;
+    /* Fuente específica para títulos */
+    color: #8105e6;
+    /* Color de los títulos */
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0;
+    /* Elimina el margen superior */
+    font-family: 'Arial Black', Arial, sans-serif;
+    /* Fuente específica para títulos */
+    color: #575555;
+    /* Color de los títulos */
+}
+
+.servicios {
+    text-align: center;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    /* Elimina el subrayado de los enlaces */
+    color: inherit;
+    /* Hereda el color del texto */
+}
+
+a:hover {
+    text-decoration: underline;
+    /* Subraya el texto al pasar el cursor */
+}
+
+ul {
+    list-style: none;
+    /* Elimina los puntos de lista */
+    padding: 0;
+    /* Elimina el relleno predeterminado */
+}
+
+/* Estilos para el header */
+header {
+    text-align: center;
+    /* Centra el texto */
+    padding: 25px 0;
+    /* Rellena la parte superior e inferior */
+}
+
+header nav {
+    margin-bottom: 10px;
+    /* Añade un margen inferior */
+}
+
+header nav a {
+    background-color: rgba(7, 7, 7, 0.7);
+    /* Color de fondo semi-transparente */
+    margin-right: 10px;
+    /* Añade un margen derecho */
+    color: rgb(112, 111, 111);
+    /* Color del texto */
+    padding: 5px 10px;
+    /* Rellena el contenido del enlace */
+    border-radius: 5px;
+    /* Bordes redondeados */
+}
+
+header nav a:hover {
+    background-color: rgba(153, 151, 151, 0.3);
+    /* Cambia el color de fondo al pasar el cursor */
+}
+
+/* Estilos para el menú */
+menu {
+    margin-top: 20px;
+    /* Añade un margen superior */
+    padding: 20px;
+    /* Añade relleno */
+    background-color: rgba(153, 151, 151, 0.3);
+    /* Fondo semi-transparente */
+    border-radius: 10px;
+    /* Bordes redondeados */
+}
+
+menu h2,
+menu h3 {
+    text-align: center;
+    /* Centra el texto */
+    font-weight: bold;
+    /* Hace el texto en negrita */
+}
+
+.menu-container {
+    margin-top: 20px;
+    /* Añade un margen superior */
+}
+
+.image-container,
+.video-container,
+.table-container {
+    margin: 0 auto 10px;
+    /* Centra los elementos horizontalmente y añade margen inferior */
+    overflow: hidden;
+    /* Oculta el contenido desbordado */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    text-align: center;
+    /* Centra el contenido */
+}
+
+.image-container img,
+.video-container video {
+    display: inline-block;
+    /* Cambia a display inline-block para centrar */
+    width: 60%;
+    /* Tamaño del contenido */
+    height: auto;
+    /* Ajusta la altura automáticamente */
+    transition: transform 0.3s ease;
+    /* Añade una transición suave para transformaciones */
+}
+
+.image-container:hover img,
+.video-container:hover video {
+    transform: scale(1.1);
+    /* Agranda el contenido al pasar el cursor */
+}
+
+.table-container {
+    overflow-x: auto;
+    /* Añade scroll horizontal si es necesario */
+}
+
+.table-container table {
+    width: 100%;
+    /* Ocupa todo el ancho del contenedor */
+    border-collapse: collapse;
+    /* Colapsa los bordes */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    overflow: hidden;
+    /* Oculta el contenido desbordado */
+}
+
+.table-container th,
+.table-container td {
+    padding: 10px;
+    /* Añade relleno */
+    border: 1px solid #ddd;
+    /* Bordes de la tabla */
+    text-align: left;
+    /* Alinea el texto a la izquierda */
+}
+
+/* Estilos para el footer */
+footer {
+    text-align: center;
+    /* Centra el texto */
+    padding: 20px;
+    /* Añade relleno */
+    background-color: rgba(153, 151, 151, 0.3);
+    /* Fondo semi-transparente */
+    color: #ebe8e8;
+    /* Color del texto */
+    border-radius: 10px;
+    /* Bordes redondeados */
+}
+
+footer #social-links a {
+    margin: 0 5px;
+    /* Añade un margen horizontal */
+    color: #8b8a8a;
+    /* Color del texto */
+}
+
+footer p {
+    margin-top: 20px;
+    /* Añade un margen superior */
+    font-family: 'Arial', sans-serif;
+    /* Estilo de fuente */
+}
+
+.image-viajes {
+    margin: 0 auto 10px;
+    /* Centra los elementos horizontalmente y añade margen inferior */
+    overflow: hidden;
+    /* Oculta el contenido desbordado */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    text-align: center;
+    /* Centra el contenido */
+}
+
+.image-viajes img {
+    display: inline-block;
+    /* Cambia a display inline-block para centrar */
+    width: 30%;
+    /* Tamaño del contenido */
+    height: auto;
+    /* Ajusta la altura automáticamente */
+    transition: transform 0.3s ease;
+    /* Añade una transición suave para transformaciones */
+}
+
+.image-viajes:hover img {
+    transform: scale(1.1);
+    /* Agranda el contenido al pasar el cursor */
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Estilos para los elementos con la clase 'icono' */
+.icono {
+    color: aliceblue;
+    /* Color del texto de los elementos con la clase 'icono' */
+    font-size: 1.5vw;
+    /* Tamaño de fuente del 1.5% del ancho de la ventana */
+    text-align: center;
+    /* Centra el texto horizontalmente */
+    height: auto;
+    text-decoration: none;
+    gap: 2px;
+}
+
+/* Estilos para los elementos 'a' dentro de elementos con la clase 'icono' */
+.icono:a {
+    color: #000000;
+    /* Color del texto de los enlaces dentro de elementos con la clase 'icono' */
+    margin: 0px 6px;
+    /* Margen de 0px en la parte superior e inferior y 6px a la izquierda y derecha */
+    font-size: 2vw;
+    /* Tamaño de fuente del 2% del ancho de la ventana */
+}
+
+/* Estilos cuando el mouse está sobre elementos con la clase 'icono' */
+.icono:hover {
+    color: rgb(168, 30, 30);
+    /* Cambia el color del texto cuando el mouse está sobre los elementos con la clase 'icono' */
+}
+
+.image-cudi {
+    text-align: center;
+    /* Centra el contenido */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Centra el formulario para contacto con la empresa */
+.centrar-formulario {
+    display: flex;
+    /* Utiliza un contenedor flex para centrar los elementos */
+    flex-direction: column;
+    /* Alinea los elementos en una columna */
+    align-items: center;
+    /* Centra los elementos horizontalmente */
+    text-align: center;
+    /* Centra el texto dentro de los elementos */
+}
+
+.centrar-formulario form {
+    display: flex;
+    /* Utiliza un contenedor flex para el formulario */
+    flex-direction: column;
+    /* Alinea los elementos del formulario en una columna */
+    align-items: center;
+    /* Centra los elementos del formulario horizontalmente */
+    width: 100%;
+    /* Hace que el formulario ocupe el 100% del ancho del contenedor */
+    max-width: 500px;
+    /* Establece un ancho máximo para el formulario */
+}
+
+.centrar-formulario form label,
+.centrar-formulario form input,
+.centrar-formulario form textarea {
+    width: 100%;
+    /* Hace que las etiquetas, entradas y áreas de texto ocupen el 100% del ancho del formulario */
+    margin-bottom: 10px;
+    /* Añade un margen inferior para separar los elementos */
+}
+
+.centrar-formulario form input[type="submit"] {
+    width: auto;
+    /* Ajusta el ancho del botón de envío al tamaño de su contenido */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el botón de envío */
+}
+
+/* boton de enviar check verde */
+
+@keyframes buttonHover {
+    0% {
+        background-color: #4CAF50;
+        transform: scale(1);
+    }
+
+    50% {
+        background-color: #45a049;
+        transform: scale(1.1);
+    }
+
+    100% {
+        background-color: #4CAF50;
+        transform: scale(1);
+    }
+}
+
+/* Estilos del botón de envío */
+
+.contenedor-mapa form input[type="submit"] {
+    width: auto;
+    /* Ajusta el ancho del botón al contenido */
+    cursor: pointer;
+    /* Cambia el cursor cuando se pasa sobre el botón */
+    padding: 10px 20px;
+    /* Añade relleno al botón */
+    background-color: #4CAF50;
+    /* Color de fondo inicial */
+    color: white;
+    /* Color del texto */
+    border: none;
+    /* Elimina el borde */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    transition: transform 0.3s ease;
+    /* Transición suave para transformaciones */
+}
+
+.contenedor-mapa form input[type="submit"]:hover {
+    animation: buttonHover 0.6s ease-in-out;
+    /* Aplica la animación al pasar el cursor */
+}
+
+/* Mapas de sucursales centrados */
+.contenedor-mapa {
+    text-align: center;
+    /* Centra el contenido dentro del contenedor */
+    margin: 20px 0;
+    /* Añade un margen superior e inferior */
+}
+
+.contenedor-mapa iframe {
+    display: inline-block;
+    /* Cambia a display inline-block para permitir centrado */
+    margin: 0 auto;
+    /* Añade un margen automático a los lados para centrar */
+}
+
+/*centrar opciones en compra de pasajes "tides si o no" */
+/* Centrar el contenido del formulario */
+.centrar-formulario {
+    text-align: center;
+}
+
+/* Agrupar y centrar opciones de radio */
+.radio-group {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* Espacio entre los elementos */
+}
+
+/* Agrupar y centrar opciones de checkbox */
+.checkbox-group {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* Espacio entre los elementos */
+}
+
+/* boton enviar color verde */
+
+button.Enviar,
+input[type="submit"].Enviar {
+    background-color: green;
+    /* Establece el color de fondo del botón a verde */
+    color: white;
+    /* Establece el color del texto del botón a blanco */
+    border: none;
+    /* Elimina cualquier borde predeterminado del botón */
+    padding: 10px 20px;
+    /* Agrega un relleno interno alrededor del contenido del botón (10px arriba/abajo y 20px izquierda/derecha) */
+    cursor: pointer;
+    /* Cambia el cursor a una mano al pasar sobre el botón, indicando que es clicable */
+    font-size: 16px;
+    /* Establece el tamaño de fuente del texto dentro del botón a 16px */
+}
+
+/**/
+/* boton info viajes  */
+
+.viajes-button {
+    display: inline-block;
+    background-color: rgb(1, 123, 167);
+    color: rgb(244, 244, 244);
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.viajes-button:hover {
+    background-color: lightblue;
+    color: white;
+}
+
+.button-container {
+    position: relative;
+    display: inline-block;
+
+}
+
+.plane-animation {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+}
+
+.viajes-button:hover+.plane-animation {
+    display: block;
+    animation: fly 2s linear forwards;
+}
+
+@keyframes fly {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: -10%;
+    }
+}
+
+.tilde {
+    /* pocision fija a la pantalla*/
+    color: #fff;
+    font-size: 150px;
+    text-align: center;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.grid-img {
+    width: 100%;
+    text-decoration: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-gap: 1rem;
+    text-decoration: none;
+}
+
+.grid-item {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-gap: 1rem;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.grid-item img {
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover img {
+    transform: scale(1.1);
+}
+
+.d-inline-block {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.grid-h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: wite;
+    text-decoration: none;
+}
+
+.grid-p {
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    border-bottom-style: none;
+    text-decoration: none;
+
+}
+
+.grid-pa1s {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-bottom-style: none;
+}
+
+.grid-p2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    border-bottom-style: none;
+    text-decoration: none;
+}
+.ajustenav {
+    flex-direction: column;
+    gap: 2px;
+    color: white;
+    text-decoration: none;
+
+}
+
+@media screaen and (max-width: 400px)
+/*Cuando la pantalla tenga como maximo 800px se pone en la direccion que le decimos*/
+    {
+    .icono {
+        color: aliceblue;
+        /* Color del texto de los elementos con la clase 'icono' */
+        font-size: 1.5vw;
+        /* Tamaño de fuente del 1.5% del ancho de la ventana */
+        text-align: center;
+        /* Centra el texto horizontalmente */
+        height: auto;
+        text-decoration: none;
+    }
+    .icono:a {
+        color: #000000;
+        /* Color del texto de los enlaces dentro de elementos con la clase 'icono' */
+        margin: 0px 6px;
+        /* Margen de 0px en la parte superior e inferior y 6px a la izquierda y derecha */
+        font-size: 2vw;
+        /* Tamaño de fuente del 2% del ancho de la ventana */
+    }
+
+    .item-3 {
+        /*Esto es para cambiar la posicion del item 3 cuando llegue a 800px*/
+        order: 5;
+        color: white;
+    }
+
+}
+
+@media (min-width:401px) and (max-width: 800px)
+/*Cuando la pantalla tenga como maximo 800px se pone en la direccion que le decimos*/
+    {
+    .icono {
+        color: aliceblue;
+        /* Color del texto de los elementos con la clase 'icono' */
+        font-size: 4vw;
+        /* Tamaño de fuente del 1.5% del ancho de la ventana */
+        text-align: center;
+        /* Centra el texto horizontalmente */
+        height: auto;
+    
+    }
+    .icono:a {
+        color: #000000;
+        /* Color del texto de los enlaces dentro de elementos con la clase 'icono' */
+        margin: 0px 6px;
+        /* Margen de 0px en la parte superior e inferior y 6px a la izquierda y derecha */
+        font-size: 2vw;
+        /* Tamaño de fuente del 2% del ancho de la ventana */
+    }
+
+    .item-3 {
+        /*Esto es para cambiar la posicion del item 3 cuando llegue a 800px*/
+        order: 5;
+        
+    }
+
+}
+
+.carousel-image {
+    height: 700px; /* Ajusta la altura según sea necesario */
+    object-fit: cover; /* Recorta la imagen para llenar el contenedor */
+    width: 400%; /* Asegura que la imagen cubra todo el ancho */
+}
+
